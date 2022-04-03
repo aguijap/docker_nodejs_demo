@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 3000;
-const config = require('config')
+// const port = process.env.PORT || 3000;
+const config = require('./config')
 
 app.get('/', (req, res)=>{
     res.send('CI/CD App, Works well !')
@@ -18,6 +18,6 @@ app.get('/hello',(req, res)=>{
 
 })
 
-app.listen(port, ()=>{
-    console.log(`Example app listening on http://localhost:${port}`);
+app.listen(config.app.port, ()=>{
+    console.log(`Example app listening on http://localhost:${config.app.port}`);
 })
