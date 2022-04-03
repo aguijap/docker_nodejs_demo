@@ -18,7 +18,7 @@ app.get('/status', (req, res)=>{
 
 app.get('/hello',(req, res)=>{
     res.status(200)
-    res.send('Hi, there!')
+    res.send('Hi, there California!')
 
 })
 
