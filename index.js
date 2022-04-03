@@ -8,7 +8,7 @@ const maquina = os.hostname()
 
 app.get('/', (req, res)=>{
     //res.send('Esta es la salida del root');
-    res.send('Esto es el depliegue en AZURE')
+    res.send(maquina)
 })
 
 app.get('/status', (req, res)=>{
