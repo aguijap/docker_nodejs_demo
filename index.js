@@ -4,7 +4,7 @@ const app = express()
 const hostname = process.env.HOSTNAME || 3000;
 const config = require('./config')
 // meto maquina para ver nombre de la instancia donde se abre el servidor. Para ver en cluster
-const maquina = os.networkInterfaces()
+const maquina = os.hostname()
 
 app.get('/', (req, res)=>{
     //res.send('Esta es la salida del root');
